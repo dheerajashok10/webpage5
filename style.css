@@ -1,143 +1,96 @@
-/* General Reset and Basic Styles */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
     color: #333;
 }
 
-/* Header Styles */
 header {
-    background-color: #4CAF50;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
     padding: 20px 0;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-    color: #fff;
-    font-size: 2.5em;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 20px 0 0;
+    list-style: none;
     padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 30px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #ffeb3b;
 }
 
-/* Main Intro Section */
-.intro {
-    background-color: #fff;
-    padding: 40px 0;
-    text-align: center;
+main {
+    padding: 20px;
 }
 
-.intro h2 {
-    font-size: 2em;
-    color: #333;
+.hero {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
-.intro p {
-    font-size: 1.2em;
-    color: #666;
-    max-width: 800px;
-    margin: 0 auto;
+.hero h2 {
+    color: #6a11cb;
 }
 
-/* Highlight Section */
-.highlight {
-    background-color: #f9f9f9;
-    padding: 40px 0;
-}
-
-.highlight .container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.highlight .box {
-    background-color: #fff;
-    padding: 30px;
+.skills {
+    background: #fff;
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    text-align: center;
-    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.highlight .box h3 {
-    font-size: 1.5em;
-    margin-bottom: 15px;
-    color: #333;
+.skills h2 {
+    color: #2575fc;
 }
 
-.highlight .box p {
-    font-size: 1.1em;
-    color: #777;
+.skill-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.highlight .box:hover {
-    transform: translateY(-10px);
-}
-
-/* Footer Styles */
-footer {
-    background-color: #333;
+.skill {
+    background: #6a11cb;
     color: #fff;
-    padding: 20px 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    flex: 1 1 100px; /* Flex-grow, flex-shrink, flex-basis */
     text-align: center;
+    transition: transform 0.3s;
 }
 
-footer a {
-    color: #4CAF50;
-    text-decoration: none;
+.skill:hover {
+    transform: scale(1.05);
 }
 
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .highlight .box {
-        width: 100%;
-        padding: 20px;
-    }
-
-    header h1 {
-        font-size: 2em;
-    }
-
-    nav ul {
-        margin-top: 10px;
-    }
-
-    nav ul li {
-        display: block;
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
